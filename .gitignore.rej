@@ -1,0 +1,6 @@
+diff a/.gitignore b/.gitignore	(rejected hunks)
+@@ -34,3 +34,4 @@
+ /yarn-error.log
+ yarn-debug.log*
+ .yarn-integrity
++.env
