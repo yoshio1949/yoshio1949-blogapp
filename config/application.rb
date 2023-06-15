@@ -12,8 +12,9 @@ module Yoshio1949Blogapp
     config.load_defaults 6.0
 
     if Rails.env.development? || Rails.env.test?
-    Bundler.require(*Rails.groups)
-    Dotenv::Railtie.load
+      Bundler.require(*Rails.groups)
+      Dotenv::Railtie.load
+    end
 
     Aws.use_bundled_cert!
 
