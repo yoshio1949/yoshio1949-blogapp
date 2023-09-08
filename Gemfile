@@ -29,6 +29,7 @@ gem 'devise'
 gem 'dotenv-rails'
 gem 'aws-sdk-s3', require: false
 gem 'aws-sdk-core'
+gem 'active_decorator'
 
 # Use Active Storage variant
 gem 'image_processing', '~> 1.2'
