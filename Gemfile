@@ -32,6 +32,7 @@ gem 'aws-sdk-core'
 gem 'active_decorator'
 gem 'active_model_serializers'
 gem 'sidekiq'
+gem 'net-http'
 
 # Use Active Storage variant
 gem 'image_processing', '~> 1.2'
