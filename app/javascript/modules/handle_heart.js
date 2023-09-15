@@ -4,7 +4,7 @@ import axios from 'modules/axios'
 const listenInactiveHeartEvent = (articleId) => {
   $(".inactive-heart").on("click", () => {
     axios
-      .post(`/articles/${articleId}/like`)
+      .post(`/api/articles/${articleId}/like`)
       .then((response) => {
         if (response.data.status === "ok") {
           $(".active-heart").removeClass("hidden");
@@ -21,16 +21,16 @@ const listenInactiveHeartEvent = (articleId) => {
 const listenActiveHeartEvent = (articleId) => {
   $(".active-heart").on("click", () => {
     axios
-      .delete(`/articles/${articleId}/like`)
+      .delete(`/api/articles/${articleId}/like`)
       .then((response) => {
         if (response.data.status === "ok") {
-          $(".active-heart").addClass("hidden");
-          $(".inactive-heart").removeClass("hidden");
+          $(".active-heart").addClass("hidden")
+          $(".inactive-heart").removeClass("hidden")
         }
       })
       .catch((e) => {
-        window.alert("Error");
-        console.log(e);
+        window.alert("Error")
+        console.log(e)
       })
   })
 }
